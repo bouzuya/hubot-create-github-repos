@@ -1,6 +1,6 @@
 {
   "name": "hubot-create-github-repos",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Hubot script to create a new repository in GitHub",
   "main": "index.js",
   "scripts": {
