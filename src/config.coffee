@@ -10,12 +10,10 @@ class ConfigParser
       default: v
 
   parse: ->
-    config = @keys.reduce (config, i) ->
+    @keys.reduce (config, i) ->
       config[i.key] = process.env[i.env] ? i.default
       config
     , {}
-    console.log config
-    config
 
 module.exports = (scriptName, defaults) ->
   new ConfigParser(scriptName, defaults).parse()
