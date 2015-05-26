@@ -1,34 +1,19 @@
 {
   "name": "hubot-create-github-repos",
-  "version": "1.0.1",
   "description": "A Hubot script to create a new repository in GitHub",
-  "main": "index.js",
-  "scripts": {
-    "build": "gulp",
-    "clean": "gulp clean",
-    "coveralls": "gulp coveralls",
-    "robot": "HUBOT_SHELL_USER_NAME='bouzuya' hubot --adapter shell --name hubot",
-    "test": "gulp test",
-    "watch": "gulp watch"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/bouzuya/hubot-create-github-repos.git"
-  },
-  "keywords": [
-    "hubot",
-    "hubot-scripts"
-  ],
+  "version": "1.0.1",
   "author": {
     "name": "bouzuya",
     "mail": "m@bouzuya.net",
     "url": "http://bouzuya.net"
   },
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/bouzuya/hubot-create-github-repos/issues"
   },
-  "homepage": "https://github.com/bouzuya/hubot-create-github-repos",
+  "dependencies": {
+    "change-case": "^2.1.6",
+    "github": "^0.2.3"
+  },
   "devDependencies": {
     "coffee-script": "^1.8.0",
     "del": "^1.1.0",
@@ -46,8 +31,23 @@
     "sinon": "^1.10.3",
     "through2": "^0.6.1"
   },
-  "dependencies": {
-    "change-case": "^2.1.6",
-    "github": "^0.2.3"
+  "homepage": "https://github.com/bouzuya/hubot-create-github-repos",
+  "keywords": [
+    "hubot",
+    "hubot-scripts"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bouzuya/hubot-create-github-repos.git"
+  },
+  "scripts": {
+    "build": "gulp",
+    "clean": "gulp clean",
+    "coveralls": "gulp coveralls",
+    "robot": "HUBOT_SHELL_USER_NAME='bouzuya' hubot --adapter shell --name hubot",
+    "test": "gulp test",
+    "watch": "gulp watch"
   }
 }
