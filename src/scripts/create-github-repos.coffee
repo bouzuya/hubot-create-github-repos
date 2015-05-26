@@ -12,7 +12,7 @@
 #   bouzuya <m@bouzuya.net>
 #
 GitHub = require 'github'
-parseConfig = require '../config'
+parseConfig = require 'hubot-config'
 
 config = parseConfig 'create-github-repos',
   defaultUsername: null
