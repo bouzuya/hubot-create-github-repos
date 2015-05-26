@@ -11,8 +11,8 @@
     "url": "https://github.com/bouzuya/hubot-create-github-repos/issues"
   },
   "dependencies": {
-    "change-case": "^2.1.6",
-    "github": "^0.2.3"
+    "github": "^0.2.3",
+    "hubot-config": "^1.0.1"
   },
   "devDependencies": {
     "coffee-script": "^1.8.0",
